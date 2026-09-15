@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { formatSpread, formatTotalDiff, gradeWord, week1Tape } from "@/lib/tape";
@@ -14,6 +15,11 @@ function tone(g: Grade): "win" | "risk" | "neutral" {
 
 function TapePage() {
   const rows = week1Tape();
+  useEffect(() => {
+    const id = window.location.hash.replace("#", "");
+    if (!id) return;
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
   const mlW = rows.filter((r) => r.ml === "W").length;
   const mlL = rows.filter((r) => r.ml === "L").length;
   const atsW = rows.filter((r) => r.ats === "W").length;
@@ -37,7 +43,7 @@ function TapePage() {
 
       <ul className="flex flex-col gap-3">
         {rows.map((r) => (
-          <li key={r.id} className="rounded-xl bg-surface p-4 shadow-[var(--shadow-border)]">
+          <li id={r.id} key={r.id} className="rounded-xl bg-surface p-4 shadow-[var(--shadow-border)]">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h2 className="font-display text-xl">
                 {r.away} @ {r.home}

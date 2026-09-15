@@ -76,13 +76,22 @@ function Home() {
       </section>
 
       <section className="grid gap-3 sm:grid-cols-3">
-        <Stat label="Score so far" value={desk} hint={`${rec.desk.w} right, ${rec.desk.l} wrong after ${deskN} finals`} />
         <Stat
+          to="/tape"
+          label="Score so far"
+          value={desk}
+          hint={`${rec.desk.w} right, ${rec.desk.l} wrong after ${deskN} finals. Tap for every game.`}
+        />
+        <Stat
+          to="/tape"
+          hash="den-kc"
           label="Monday night write"
           value="Exact"
           hint="We wrote 41. Final was 41 (KC 31–10). Off by 0."
         />
         <Stat
+          to="/tape"
+          hash="sf-lar"
           label="Melbourne opener"
           value="Miss"
           hint="We said LAR. Final SF 27–7. Winner wrong."
@@ -287,12 +296,28 @@ function Home() {
   );
 }
 
-function Stat({ label, value, hint }: { label: string; value: string; hint: string }) {
+function Stat({
+  label,
+  value,
+  hint,
+  to,
+  hash,
+}: {
+  label: string;
+  value: string;
+  hint: string;
+  to: "/tape";
+  hash?: string;
+}) {
   return (
-    <div className="rounded-xl bg-surface p-5 shadow-[var(--shadow-border)]">
+    <Link
+      to={to}
+      hash={hash}
+      className="rounded-xl bg-surface p-5 shadow-[var(--shadow-border)] transition-[box-shadow] hover:shadow-[var(--shadow-border-hover)]"
+    >
       <p className="font-mono text-xs uppercase tracking-widest text-muted">{label}</p>
       <p className="mt-2 font-display text-3xl tabular-nums">{value}</p>
       <p className="mt-1 text-sm text-muted">{hint}</p>
-    </div>
+    </Link>
   );
 }
