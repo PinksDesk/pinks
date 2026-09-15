@@ -44,7 +44,7 @@ function Home() {
           Friday 12:00 noon PT, after Thursday night and morning talks. Monday 12:00 noon PT, after Sunday grades and the Monday night refresh. We check a preview first. Publish only when told. Builds stop after one Publish to save credits.
         </p>
         <p className="mt-3 max-w-2xl text-sm text-muted">
-          Free for now. If this helps and you want more updates or improvements, donate until subscriptions exist. Donors and people who help with real ideas or fixes can get lifetime free access if we keep building.
+          Free for now. Want more updates, sharper lines, or faster ships? Bribe the Book — chip in for the time, bots, apps, and domains until real subscriptions exist. People who bribe or bring real ideas and fixes get lifetime free access if we keep building this.
         </p>
       </section>
 
