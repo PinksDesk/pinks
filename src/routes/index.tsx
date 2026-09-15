@@ -43,9 +43,20 @@ function Home() {
         <p className="mt-2 max-w-2xl text-sm text-muted">
           Friday 12:00 noon PT, after Thursday night and morning talks. Monday 12:00 noon PT, after Sunday grades and the Monday night refresh. We check a preview first. Publish only when told. Builds stop after one Publish to save credits.
         </p>
-        <p className="mt-3 max-w-2xl text-sm text-muted">
-          Free for now. Want more updates, sharper lines, or faster ships? Bribe the Book — chip in for the time, bots, apps, and domains until real subscriptions exist. People who bribe or bring real ideas and fixes get lifetime free access if we keep building this.
+      </section>
+
+      <section className="rounded-xl border border-accent/40 bg-surface p-6 shadow-[var(--shadow-border)]">
+        <p className="font-mono text-xs uppercase tracking-widest text-accent">Support the desk</p>
+        <h2 className="mt-2 font-display text-3xl tracking-tight">Bribe the Book</h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+          Free for now. Want more updates, sharper lines, or faster ships? Chip in for the time, bots, apps, and domains until real subscriptions exist. Bribes and real ideas or fixes get lifetime free access if we keep building this.
         </p>
+        <div className="mt-4">
+          <Button asChild>
+            <Link to="/ask">Bribe the Book</Link>
+          </Button>
+        </div>
+        <p className="mt-2 text-xs text-muted">Payment link goes live when we wire the till. Until then, ask here.</p>
       </section>
 
       <section className="rounded-xl bg-surface p-6 shadow-[var(--shadow-border)]">
