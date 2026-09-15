@@ -41,15 +41,15 @@ function Home() {
       <section className="rounded-xl bg-surface p-6 shadow-[var(--shadow-border)]">
         <p className="font-mono text-xs uppercase tracking-widest text-muted">Games that already ended</p>
         <p className="mt-2 max-w-2xl text-sm text-muted">
-          Only finished games count. Two have finished. We got one right and one wrong. That is why
-          you see 50%. Next Sunday this number will move.
+          Only finished games count. {deskN} have finished. We got {rec.desk.w} right and {rec.desk.l} wrong.
+          Misses stay up.
         </p>
         <div className="mt-6 grid gap-6 sm:grid-cols-3">
           <div>
             <p className="font-mono text-xs uppercase tracking-widest text-muted">Our written picks</p>
             <p className="mt-1 font-display text-5xl tabular-nums">{formatPct(deskPct)}</p>
             <p className="mt-1 text-sm text-muted">
-              {rec.desk.w} right · {rec.desk.l} wrong. Seattle hit. Los Angeles miss. Misses stay up.
+              {rec.desk.w} right · {rec.desk.l} wrong. Misses stay up.
             </p>
           </div>
           <div>
@@ -73,8 +73,8 @@ function Home() {
       </section>
 
       <section className="grid gap-3 sm:grid-cols-3">
-        <Stat label="Score so far" value={desk} hint="1 right, 1 wrong after two finals" />
-        <Stat label="Monday night" value="41" hint="Kansas City 24, Denver 17" />
+        <Stat label="Score so far" value={desk} hint={`${rec.desk.w} right, ${rec.desk.l} wrong after ${deskN} finals`} />
+        <Stat label="Monday night" value="41" hint="Kansas City 31, Denver 10" />
         <Stat label="Thursday" value="SF 27–7" hint="San Francisco won in Australia" />
       </section>
 

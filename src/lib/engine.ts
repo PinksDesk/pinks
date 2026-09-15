@@ -1,6 +1,6 @@
 import { ANALYSTS } from "@/data/analysts";
 import { PUBLIC } from "@/data/market";
-import { GAMES, type Game, type Injury } from "@/data/slate";
+import { GAMES, WEEK1_GAMES, type Game, type Injury } from "@/data/slate";
 import { americanToImplied } from "@/lib/odds";
 
 export type Factor = {
@@ -214,8 +214,12 @@ export function scoreGame(g: Game): GameEdge {
   };
 }
 
+function slate(): Game[] {
+  return [...WEEK1_GAMES, ...GAMES];
+}
+
 export function allEdges(): GameEdge[] {
-  return GAMES.map(scoreGame);
+  return slate().map(scoreGame);
 }
 
 export function seasonRecord(edges = allEdges()) {
@@ -226,7 +230,7 @@ export function seasonRecord(edges = allEdges()) {
     const p = graded.filter((e) => e.grade?.[key] === "P").length;
     return { w, l, p, pct: w + l ? w / (w + l) : 0 };
   };
-  const deskSu = GAMES.filter((g) => g.status === "final").reduce(
+  const deskSu = slate().filter((g) => g.status === "final").reduce(
     (acc, g) => {
       const sc = parseScore(g);
       if (!sc) return acc;
