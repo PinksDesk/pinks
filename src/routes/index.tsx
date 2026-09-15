@@ -53,10 +53,12 @@ function Home() {
         </p>
         <div className="mt-4">
           <Button asChild>
-            <Link to="/ask">Bribe the Book</Link>
+            <a href={HOUSE.bribeUrl} target="_blank" rel="noopener noreferrer">
+              Bribe the Book
+            </a>
           </Button>
         </div>
-        <p className="mt-2 text-xs text-muted">Payment link goes live when we wire the till. Until then, ask here.</p>
+        <p className="mt-2 text-xs text-muted">Opens Stripe. You pick the amount (starts at $20, $5 minimum). PayPal later.</p>
       </section>
 
       <section className="rounded-xl bg-surface p-6 shadow-[var(--shadow-border)]">
