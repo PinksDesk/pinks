@@ -113,7 +113,7 @@ export const LESSONS: Lesson[] = [
         heading: "What stays off",
         body: [
           "Coin flips do not belong on a parlay. Bills at Houston, Packers at Minnesota, Jets at Tennessee, Monday night in Kansas City — the desk may have a lean. A lean is not a leg.",
-          "If a game is 54% on the engine, that is a coin with a logo on it. Put it on a single if you must. Do not let it kill four other sides.",
+          "If a game feels like a coin flip, that is a coin with a logo on it. Put it on a single if you must. Do not let it kill four other sides.",
         ],
       },
       {
@@ -251,25 +251,25 @@ export const LESSONS: Lesson[] = [
     title: "What this desk is actually doing",
     kicker: "Open",
     teaser:
-      "Research, a public blend, Grok on a wire. Compared to humans. Misses stay posted. Nobody is selling a lock.",
+      "Research, one public call, Grok on a wire when you ask. Misses stay posted. Nobody is selling a lock.",
     member: false,
     body: [
-      "Pinks is a desk, not a book. We do not take your action. We write down what we think, what the humans think, and what the wire just said — then we grade it in public.",
+      "Pinks is a desk, not a book. We do not take your action. We lock one PinksDesk pick per game, keep Sources honest, and grade misses in public.",
     ],
     sections: [
       {
         heading: "The loop",
         body: [
-          "Games and the Engine start from a snapshot: schedule, injuries, posted lines, public splits, capper lean. Anyone can read those pages. We weight them and print a side.",
+          "We start from a snapshot anyone can check: schedule, injuries, posted lines, public chatter, other writers. Then we lock one PinksDesk pick.",
           "The Wire is Grok searching X when you tap Pull — Schefter, Rapoport, Pelissero, Garafolo, the league account. Not on page load. Not a mystic.",
-          "The letter is the recap in English. The log keeps hits and misses in order so a weight that stopped earning its keep gets cut.",
+          "The letter is the recap in English. The log keeps hits and misses so bad habits get cut. The full kitchen recipe stays private.",
         ],
       },
       {
         heading: "What we will admit",
         body: [
           "A cold prompt and less feeling would get most of Week 1. If we ever have something worth hiding, Learn will mark it house. We are not there.",
-          "Melbourne was a miss. Desk and engine both on the Rams. 27–7 the other way. That stays in the log. We do not patch a miss after the fact and pretend the model “had the 49ers all along.”",
+          "Melbourne was a miss. We said Rams. Final SF 27–7. That stays in the log. We do not patch a miss after the fact.",
         ],
       },
       {
@@ -281,8 +281,7 @@ export const LESSONS: Lesson[] = [
       },
     ],
     reading: [
-      { title: "Engine (this app)", url: "/engine", why: "Weights in the open." },
-      { title: "Sources (this app)", url: "/sources", why: "Everything we query, linked." },
+      { title: "Sources (this app)", url: "/sources", why: "Where we gather information." },
       { title: "What’s new", url: "/log", why: "Hits, misses, ships — dated." },
     ],
   },
@@ -291,7 +290,7 @@ export const LESSONS: Lesson[] = [
     title: "The algorithms, without the cologne",
     kicker: "Open",
     teaser:
-      "Elo, Massey, Pythagorean, Kelly, closing-line value — what they are in English, and which 32% of our blend is just the market.",
+      "Common sports-math ideas in English — and why we still lock one PinksDesk pick instead of worshipping the market.",
     member: false,
     body: [
       "There is no secret NFL formula. There are families of math people reuse because football scoring is noisy and the season is short. Pinks is not one of those models with a cologne name. We say what we are.",
@@ -324,7 +323,6 @@ export const LESSONS: Lesson[] = [
       },
     ],
     reading: [
-      { title: "Engine (this app)", url: "/engine", why: "The six weights, with bars." },
       {
         title: "FiveThirtyEight — NFL Elo",
         url: "https://fivethirtyeight.com/features/how-our-nfl-predictions-work",
@@ -347,7 +345,7 @@ export const LESSONS: Lesson[] = [
     title: "Grok vs humans vs other prompts",
     kicker: "Open",
     teaser:
-      "Analysts are ranked. The engine is scored. Grok is a pull, not a priest. The log keeps the bodies.",
+      "Other writers are ranked. PinksDesk picks get graded. Grok is a pull, not a priest. The log keeps the bodies.",
     member: false,
     body: [
       "Three voices sit on this desk. Humans who publish picks. A blend that does not care who yelled on TV. Grok, who can search X when you ask. We keep score so the loudest one does not win by default.",
@@ -361,7 +359,7 @@ export const LESSONS: Lesson[] = [
         ],
       },
       {
-        heading: "The engine",
+        heading: "How we think (not the recipe)",
         body: [
           "Market, consensus, injury, public fade, situation, desk. Every final graded straight up and against the spread.",
           "Public fade is not “fade the world.” It is: when 69% of tickets sit on Denver +2.5 and the money is not there with them, notice. Sometimes the public is right. We still write the split down.",
@@ -384,7 +382,6 @@ export const LESSONS: Lesson[] = [
     ],
     reading: [
       { title: "Analysts (this app)", url: "/analysts", why: "The humans." },
-      { title: "Engine (this app)", url: "/engine", why: "The blend." },
       { title: "Wire (this app)", url: "/wire", why: "The pull." },
       { title: "What’s new", url: "/log", why: "Who was right on Wednesday night." },
     ],

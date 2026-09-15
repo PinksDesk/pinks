@@ -48,13 +48,13 @@ export type PinkTicket = {
 
 const FLOOR: Record<Style, { minProb: number; minConf: number; label: string }> = {
   lock: { minProb: 0.7, minConf: 4, label: "Locks only — 70%+ blend, 4-star desk" },
-  blend: { minProb: 0.62, minConf: 3, label: "Desk + engine. 62% floor. Extra rungs are marked." },
+  blend: { minProb: 0.62, minConf: 3, label: "PinksDesk picks. 62% floor. Extra rungs are marked." },
   flyer: { minProb: 0.58, minConf: 3, label: "Will take a 58% side to fill the extra rungs." },
 };
 
 function personalScore(edge: GameEdge, profile: Profile): { score: number; why: string } {
   let score = edge.suProb;
-  const bits: string[] = [`Engine ${Math.round(edge.suProb * 100)}%`];
+  const bits: string[] = [`Lean ${Math.round(edge.suProb * 100)}%`];
   const pub = PUBLIC[edge.game.id];
   if (profile.fadePublic && pub && pub.betPct >= 65) {
     if (pub.side === edge.pick) {

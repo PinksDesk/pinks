@@ -6,7 +6,7 @@ export const Route = createFileRoute("/help")({ component: HelpPage });
 const STEPS = [
   {
     title: "1. Read the scoreboard",
-    body: "Home shows games that already ended. Our written picks are a person. The computer is math. Your tickets are only what you saved. Those three lists do not mix.",
+    body: "Home shows games that already ended. PinksDesk picks is the only public scoreboard — one call per game. Your picks are only slips you saved. Those two lists do not mix.",
   },
   {
     title: "2. Learn the ticket",

@@ -14,6 +14,15 @@ export type LogEntry = {
 
 export const CHANGELOG: LogEntry[] = [
   {
+    id: "2026-09-15-one-scoreboard",
+    at: "2026-09-15T10:10:00-07:00",
+    day: "Tue Sep 15",
+    time: "10:10 AM PT",
+    kind: "ship",
+    title: "One public scoreboard",
+    body: "PinksDesk picks is the only public call. Homework stays private. /engine redirects to Learn. Help and Learn no longer teach a second computer grade.",
+  },
+  {
     id: "2026-09-15-week2-ship",
     at: "2026-09-15T04:50:00-07:00",
     day: "Mon Sep 15",
@@ -29,7 +38,7 @@ export const CHANGELOG: LogEntry[] = [
     time: "12:20 AM PT",
     kind: "record",
     title: "Week 1 desk 12–4",
-    body: "Sixteen graded on the blot. Desk 12–4. Misses: LAR (Melbourne TNF), TEN (Jets 23–10), LAC (Cards 26–14), DAL (Giants 28–20). Everything else cashed SU including MNF KC 31–10. Write 41 exact on Monday. Engine SU tracked the desk; ATS still the soft spot on big favorites.",
+    body: "Sixteen graded on the blot. Desk 12–4. Misses: LAR (Melbourne TNF), TEN (Jets 23–10), LAC (Cards 26–14), DAL (Giants 28–20). Everything else cashed SU including MNF KC 31–10. Write 41 exact on Monday. Misses stay posted. ATS remains the soft spot on big favorites.",
     record: { desk: "12–4", engineSu: "12–4", engineAts: "8–8" },
   },
   {

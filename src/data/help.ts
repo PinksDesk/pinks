@@ -3,9 +3,9 @@ export const HELP = {
     title: "Home",
     body: "This page is the scoreboard. The big numbers are games that already ended. Under that is this week.",
     steps: [
-      "Our picks = the person who runs this site wrote down a winner before the game.",
-      "The computer = a math mix that also picks a winner. Same games, different method.",
-      "Your tickets = slips you saved. Grade them after the game so your year adds up.",
+      "PinksDesk picks = the one public call we wrote before the game. That is the scoreboard.",
+      "Your picks = slips you saved while signed in. Grade them after the game so your year adds up.",
+      "We do not publish a second math scoreboard. Homework stays in the kitchen.",
     ],
   },
   stamp: {
@@ -76,11 +76,11 @@ export const HELP = {
     steps: ["See who agrees with us and who does not."],
   },
   engine: {
-    title: "The computer",
-    body: "Math on the same games. Our written pick can differ. Both get graded when the game ends. Right and wrong both stay.",
+    title: "How we think (light)",
+    body: "We study lines, injuries, travel, and public lean, then lock one PinksDesk pick. We hint in Learn and list Sources. We do not publish the full kitchen recipe.",
     steps: [
-      "Tap a game to see the pieces: injuries, public money, home or road.",
-      "We publish the mix so a bad source can get cut.",
+      "Open Learn for the idea, not the recipe.",
+      "Open Sources for where we gather information.",
     ],
   },
   log: {

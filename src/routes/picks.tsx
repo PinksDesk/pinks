@@ -196,11 +196,11 @@ function PicksPage() {
           <h1 className="font-display text-3xl tracking-tight">Yours</h1>
         </HelpRow>
         <p className="max-w-2xl text-sm text-muted">
-          Same blend as the desk. Your floor, your window, your haircut on the public. Not a
+          Built from the same PinksDesk picks. Your floor, your window, your haircut on the public. Not a
           different reality — a different filter.
         </p>
       </header>
-      <MemberGate teaser="Set style, legs, and window. We rebuild the ladder from the engine with your floor. Join is free. 21+.">
+      <MemberGate teaser="Set style, legs, and window. We rebuild the ladder from PinksDesk picks with your floor. Join is free. 21+.">
         {form}
       </MemberGate>
     </main>
