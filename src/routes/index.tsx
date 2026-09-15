@@ -77,8 +77,16 @@ function Home() {
 
       <section className="grid gap-3 sm:grid-cols-3">
         <Stat label="Score so far" value={desk} hint={`${rec.desk.w} right, ${rec.desk.l} wrong after ${deskN} finals`} />
-        <Stat label="Monday night" value="41" hint="Kansas City 31, Denver 10" />
-        <Stat label="Thursday" value="SF 27–7" hint="San Francisco won in Australia" />
+        <Stat
+          label="Monday night write"
+          value="Exact"
+          hint="We wrote 41. Final was 41 (KC 31–10). Off by 0."
+        />
+        <Stat
+          label="Melbourne opener"
+          value="Miss"
+          hint="We said LAR. Final SF 27–7. Winner wrong."
+        />
       </section>
 
       <section className="flex flex-col gap-4">
