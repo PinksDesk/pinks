@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { formatAmerican, formatPct } from "@/lib/odds";
 import { seasonRecord } from "@/lib/engine";
 import { HelpRow } from "@/components/help-tip";
+import { HomeRecord } from "@/components/home-record";
 
 export const Route = createFileRoute("/")({ component: Home });
 
@@ -19,7 +20,6 @@ function Home() {
   const rec = seasonRecord();
   const deskN = rec.desk.w + rec.desk.l;
   const deskPct = deskN ? rec.desk.w / deskN : 0;
-  const engPct = rec.engine.su.pct;
   const desk = `${rec.desk.w}–${rec.desk.l}`;
   return (
     <main className="flex flex-col gap-10">
@@ -44,31 +44,11 @@ function Home() {
           Only finished games count. {deskN} have finished. We got {rec.desk.w} right and {rec.desk.l} wrong.
           Misses stay up.
         </p>
-        <div className="mt-6 grid gap-6 sm:grid-cols-3">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-muted">Our written picks</p>
-            <p className="mt-1 font-display text-5xl tabular-nums">{formatPct(deskPct)}</p>
-            <p className="mt-1 text-sm text-muted">
-              {rec.desk.w} right · {rec.desk.l} wrong. Misses stay up.
-            </p>
-          </div>
-          <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-muted">The computer</p>
-            <p className="mt-1 font-display text-5xl tabular-nums">{formatPct(engPct)}</p>
-            <p className="mt-1 text-sm text-muted">
-              {rec.engine.su.w} right · {rec.engine.su.l} wrong. Same games. Math, not a feeling.
-            </p>
-          </div>
-          <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-muted">Your tickets</p>
-            <p className="mt-1 font-display text-3xl">Keep score</p>
-            <p className="mt-1 text-sm text-muted">
-              Slips you saved. Mark win or lose after the game. That is your year, separate from ours.
-            </p>
-            <Button className="mt-3" size="sm" asChild>
-              <Link to="/history">Open your tickets</Link>
-            </Button>
-          </div>
+        <HomeRecord deskPct={deskPct} deskW={rec.desk.w} deskL={rec.desk.l} />
+        <div className="mt-4">
+          <Button variant="outline" size="sm" asChild>
+            <Link to="/tape">Last week's predictions</Link>
+          </Button>
         </div>
       </section>
 
@@ -248,7 +228,7 @@ function Home() {
             <Link to="/wire">Open late news</Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link to="/engine">See the computer</Link>
+            <Link to="/tape">Last week's predictions</Link>
           </Button>
         </div>
       </section>

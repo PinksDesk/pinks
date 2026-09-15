@@ -7,11 +7,11 @@ const PRIMARY = [
   { to: "/picks", label: "Yours" },
   { to: "/games", label: "Games" },
   { to: "/parlays", label: "Parlays" },
+  { to: "/tape", label: "Last week" },
 ] as const;
 
 const BOARD = [
   { to: "/analysts", label: "Other writers" },
-  { to: "/engine", label: "The computer" },
   { to: "/wire", label: "Late news" },
   { to: "/books", label: "Shops" },
   { to: "/card", label: "Pool card" },
