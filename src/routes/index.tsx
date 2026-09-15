@@ -41,7 +41,7 @@ function Home() {
       <section className="rounded-xl bg-surface p-6 shadow-[var(--shadow-border)]">
         <p className="font-mono text-xs uppercase tracking-widest text-muted">When we update</p>
         <p className="mt-2 max-w-2xl text-sm text-muted">
-          Friday 12:00 noon PT, after Thursday night and morning talks. Monday 12:00 noon PT, after Sunday grades and the Monday night refresh. We check a preview first. Publish only when told. Builds stop after one Publish to save credits.
+          Football season only. Friday 12:00 noon PT after Thursday night and morning talks. Monday 12:00 noon PT after Sunday grades and the Monday night refresh. Tuesday 12:00 noon PT after Monday night. We check a preview first. Publish only when told. Builds stop after one Publish to save credits.
         </p>
       </section>
 
