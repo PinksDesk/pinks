@@ -1120,7 +1120,7 @@ export const CARD_OVERS = {
 };
 
 export const SNAPSHOT = {
-  asOf: "Mon Sep 15, 2026 · 4:50 AM PT",
+  asOf: "Tue Sep 15, 2026 · 8:40 AM PT",
   headline:
     "Week 1 desk 12–4. MNF write 41 exact (KC 31–10). Week 2 live: BUF −3 / 53.5 TNF. Ladder SF/BAL/TB → PHI → BUF → CHI. LAC hedged off naked ladder. Murray OUT.",
   cardBlots: [2, 4, 5, 7, 10, 12, 14, 15, 18, 20, 21, 24, 26, 27, 30, 31, 32],
