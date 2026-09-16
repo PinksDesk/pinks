@@ -185,7 +185,7 @@ export const CHANGELOG: LogEntry[] = [
     time: "9:44 PM PT",
     kind: "ship",
     title: "This is Pinks",
-    body: "Not a Bogey’s sheet. House is Pinkerton — Jerime, Michigan-born, Vegas since 1996. Live odds links on Circa, Westgate/Caesars, South Point, DraftKings, FanDuel, BetMGM, Pinnacle, Bovada. Hockey desk is next. Then we marry parlays. Baseball after that.",
+    body: "House sheet only. House is Pinkerton — Jerime, Michigan-born, Vegas since 1996. Live odds links on Circa, Westgate/Caesars, South Point, DraftKings, FanDuel, BetMGM, Pinnacle, Bovada. Hockey desk is next. Then we marry parlays. Baseball after that.",
   },
   {
     id: "2026-09-10-night",
@@ -194,7 +194,7 @@ export const CHANGELOG: LogEntry[] = [
     time: "9:26 PM PT",
     kind: "ship",
     title: "Ford Field night",
-    body: "Green-black Seahawks desk is gone. Night field, Honolulu only on accent and active nav, silver type, turf hits, crimson misses. Leather lives on the Bogey card. One yard hash. No grass wallpaper.",
+    body: "Green-black Seahawks desk is gone. Night field, Honolulu only on accent and active nav, silver type, turf hits, crimson misses. Leather lives on the pool card. One yard hash. No grass wallpaper.",
   },
   {
     id: "2026-09-10-log",
@@ -240,7 +240,7 @@ export const CHANGELOG: LogEntry[] = [
     day: "Thu Sep 10",
     time: "8:40 PM PT",
     kind: "ship",
-    title: "Bogey card + parlay ladder posted",
+    title: "Pool card + parlay ladder posted",
     body: "Week 1 blot: CHI, CIN, DET, BUF, BAL, JAX, PIT, TEN, LAC, LV, MIN, PHI, DAL, KC. Overs 37½ both windows. MNF write 41. 3–6 teamers: JAX / DET / LAC then PHI, CIN, CHI. South Point. BUF/HOU, GB/MIN, NYJ/TEN, DEN/KC off parlays.",
   },
   {

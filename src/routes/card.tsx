@@ -24,9 +24,9 @@ function CardPage() {
         <HelpRow id="card">
           <h1 className="mt-1 font-display text-3xl tracking-tight">Ink the sheet</h1>
         </HelpRow>
-        <p className="mt-2 max-w-2xl text-sm text-muted">
-          Every lounge in town runs this same 32-square. Started on a Bogey’s Ann Rd copy. The blot
-          is Pinks. Ties count as wins. Closest to Monday night total takes a split. Desk write{" "}
+                <p className="mt-2 max-w-2xl text-sm text-muted">
+          32-square pool card. The blot is Pinks. Ties count as wins. Closest to Monday night total
+          takes a split. Desk write{" "}
           {SNAPSHOT.mnfTotal}.
         </p>
       </header>
