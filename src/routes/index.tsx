@@ -285,8 +285,8 @@ function Home() {
           {SNAPSHOT.cardBlots.join("  ·  ")}
         </p>
         <p className="mt-3 text-sm text-muted">
-          Sunday {CARD_OVERS.sunday.pick} {CARD_OVERS.sunday.line}. Monday {CARD_OVERS.monday.pick}{" "}
-          {CARD_OVERS.monday.line}.
+          Monday {CARD_OVERS.monday.pick} {CARD_OVERS.monday.line}. This week&apos;s bar sheet has no
+          Sunday total squares.
         </p>
         <Button className="mt-4" asChild>
           <Link to="/card">Full card</Link>

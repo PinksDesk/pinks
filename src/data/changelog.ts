@@ -14,6 +14,15 @@ export type LogEntry = {
 
 export const CHANGELOG: LogEntry[] = [
   {
+    id: "2026-09-15-pool-card-remap",
+    at: "2026-09-15T17:30:00-07:00",
+    day: "Tue Sep 15",
+    time: "5:30 PM PT",
+    kind: "ship",
+    title: "Week 2 pool card remapped to bar sheet",
+    body: "Card numbers now match Jerime's Week 2 FREE PLAY PARLAY photo (1 CAR–2 ATL through 29 NYG–30 LAR; 31/32 Mon Over/Under 37½). TNF DET@BUF stays on the slate but off the pool card. Sunday total squares removed — no Sun Over/Under on 27/28. cardBlots: ATL BAL CHI CIN NE GB TB PHI JAX LAC SEA DAL SF KC LAR + Mon Over.",
+  },
+  {
     id: "2026-09-15-one-scoreboard",
     at: "2026-09-15T10:10:00-07:00",
     day: "Tue Sep 15",

@@ -12,8 +12,6 @@ for (const g of GAMES) {
   if (g.cardAway) LABELS[g.cardAway] = `${g.away} ${g.awayCity}`;
   if (g.cardHome) LABELS[g.cardHome] = `${g.home} ${g.homeCity}`;
 }
-LABELS[27] = "Sun Over 37½";
-LABELS[28] = "Sun Under 37½";
 LABELS[31] = "Mon Over 37½";
 LABELS[32] = "Mon Under 37½";
 
@@ -63,11 +61,10 @@ function CardPage() {
         </div>
       </div>
       <section className="rounded-xl bg-surface p-5 text-sm shadow-[var(--shadow-border)]">
-        <p>
-          Sunday total: {CARD_OVERS.sunday.pick.toUpperCase()} {CARD_OVERS.sunday.line}.{" "}
-          {CARD_OVERS.sunday.note}
-        </p>
-        <p className="mt-2">
+        {"note" in CARD_OVERS.sunday && CARD_OVERS.sunday.note ? (
+          <p>{CARD_OVERS.sunday.note}</p>
+        ) : null}
+        <p className={"note" in CARD_OVERS.sunday && CARD_OVERS.sunday.note ? "mt-2" : undefined}>
           Monday total: {CARD_OVERS.monday.pick.toUpperCase()} {CARD_OVERS.monday.line}, project{" "}
           {CARD_OVERS.monday.projected}. {CARD_OVERS.monday.note}
         </p>
