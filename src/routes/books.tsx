@@ -103,7 +103,7 @@ function BooksPage() {
           <li>Singles / sides: Circa, then Pinnacle, then Westgate (Caesars board).</li>
           <li>Hedges: Circa or Pinnacle so you are not paying −110 twice. Size is on the pink ticket.</li>
           <li>
-            The pool card is a bar sheet every lounge in town runs. Different ticket. Blot it if you
+            The pool card is a separate 32-square PinksDesk sheet. Different ticket. Blot it if you
             play the pool — this desk is Pinks.
           </li>
         </ol>

@@ -12,8 +12,6 @@ for (const g of GAMES) {
   if (g.cardAway) LABELS[g.cardAway] = `${g.away} ${g.awayCity}`;
   if (g.cardHome) LABELS[g.cardHome] = `${g.home} ${g.homeCity}`;
 }
-LABELS[27] = "Sun Over 37½";
-LABELS[28] = "Sun Under 37½";
 LABELS[31] = "Mon Over 37½";
 LABELS[32] = "Mon Under 37½";
 
@@ -26,9 +24,9 @@ function CardPage() {
         <HelpRow id="card">
           <h1 className="mt-1 font-display text-3xl tracking-tight">Ink the sheet</h1>
         </HelpRow>
-        <p className="mt-2 max-w-2xl text-sm text-muted">
-          Every lounge in town runs this same 32-square. Started on a Bogey’s Ann Rd copy. The blot
-          is Pinks. Ties count as wins. Closest to Monday night total takes a split. Desk write{" "}
+                <p className="mt-2 max-w-2xl text-sm text-muted">
+          32-square pool card. The blot is Pinks. Ties count as wins. Closest to Monday night total
+          takes a split. Desk write{" "}
           {SNAPSHOT.mnfTotal}.
         </p>
       </header>
@@ -63,11 +61,10 @@ function CardPage() {
         </div>
       </div>
       <section className="rounded-xl bg-surface p-5 text-sm shadow-[var(--shadow-border)]">
-        <p>
-          Sunday total: {CARD_OVERS.sunday.pick.toUpperCase()} {CARD_OVERS.sunday.line}.{" "}
-          {CARD_OVERS.sunday.note}
-        </p>
-        <p className="mt-2">
+        {"note" in CARD_OVERS.sunday && CARD_OVERS.sunday.note ? (
+          <p>{CARD_OVERS.sunday.note}</p>
+        ) : null}
+        <p className={"note" in CARD_OVERS.sunday && CARD_OVERS.sunday.note ? "mt-2" : undefined}>
           Monday total: {CARD_OVERS.monday.pick.toUpperCase()} {CARD_OVERS.monday.line}, project{" "}
           {CARD_OVERS.monday.projected}. {CARD_OVERS.monday.note}
         </p>

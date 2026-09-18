@@ -14,6 +14,15 @@ export type LogEntry = {
 
 export const CHANGELOG: LogEntry[] = [
   {
+    id: "2026-09-15-pool-card-remap",
+    at: "2026-09-15T17:30:00-07:00",
+    day: "Tue Sep 15",
+    time: "5:30 PM PT",
+    kind: "ship",
+    title: "Week 2 pool card remapped to bar sheet",
+    body: "Card numbers now match Jerime's Week 2 FREE PLAY PARLAY photo (1 CAR–2 ATL through 29 NYG–30 LAR; 31/32 Mon Over/Under 37½). TNF DET@BUF stays on the slate but off the pool card. Sunday total squares removed — no Sun Over/Under on 27/28. cardBlots: ATL BAL CHI CIN NE GB TB PHI JAX LAC SEA DAL SF KC LAR + Mon Over.",
+  },
+  {
     id: "2026-09-15-one-scoreboard",
     at: "2026-09-15T10:10:00-07:00",
     day: "Tue Sep 15",
@@ -176,7 +185,7 @@ export const CHANGELOG: LogEntry[] = [
     time: "9:44 PM PT",
     kind: "ship",
     title: "This is Pinks",
-    body: "Not a Bogey’s sheet. House is Pinkerton — Jerime, Michigan-born, Vegas since 1996. Live odds links on Circa, Westgate/Caesars, South Point, DraftKings, FanDuel, BetMGM, Pinnacle, Bovada. Hockey desk is next. Then we marry parlays. Baseball after that.",
+    body: "House sheet only. House is Pinkerton — Jerime, Michigan-born, Vegas since 1996. Live odds links on Circa, Westgate/Caesars, South Point, DraftKings, FanDuel, BetMGM, Pinnacle, Bovada. Hockey desk is next. Then we marry parlays. Baseball after that.",
   },
   {
     id: "2026-09-10-night",
@@ -185,7 +194,7 @@ export const CHANGELOG: LogEntry[] = [
     time: "9:26 PM PT",
     kind: "ship",
     title: "Ford Field night",
-    body: "Green-black Seahawks desk is gone. Night field, Honolulu only on accent and active nav, silver type, turf hits, crimson misses. Leather lives on the Bogey card. One yard hash. No grass wallpaper.",
+    body: "Green-black Seahawks desk is gone. Night field, Honolulu only on accent and active nav, silver type, turf hits, crimson misses. Leather lives on the pool card. One yard hash. No grass wallpaper.",
   },
   {
     id: "2026-09-10-log",
@@ -231,7 +240,7 @@ export const CHANGELOG: LogEntry[] = [
     day: "Thu Sep 10",
     time: "8:40 PM PT",
     kind: "ship",
-    title: "Bogey card + parlay ladder posted",
+    title: "Pool card + parlay ladder posted",
     body: "Week 1 blot: CHI, CIN, DET, BUF, BAL, JAX, PIT, TEN, LAC, LV, MIN, PHI, DAL, KC. Overs 37½ both windows. MNF write 41. 3–6 teamers: JAX / DET / LAC then PHI, CIN, CHI. South Point. BUF/HOU, GB/MIN, NYJ/TEN, DEN/KC off parlays.",
   },
   {
